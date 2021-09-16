@@ -424,11 +424,25 @@ font-size: 1.7em;
 @media only screen and (max-width:1100px){
     #serve{
         max-width: 700px;
+        padding: 50px 70px ;
+    }
+
+}
+@media screen and (max-width:768px) {
+    #vic{
+        padding: 0;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 400px;
+    }
+    #serve{
+padding: 40px 60px;
     }
 }
 @media only screen and (max-width:655px) {
     #serve{
         text-align: center;
+
     }
     #vic{
         display: flex;
@@ -436,6 +450,11 @@ font-size: 1.7em;
         flex: 1;
         text-align: center;
         max-width: 400px;
+    }
+}
+@media only screen and (max-width:500px) {
+    #vic{
+        max-width: 600px;
     }
 }
 
@@ -556,9 +575,7 @@ footer p{
 
 
 @media screen and (max-width:1036px) {
-    #serve{
-        padding: 100px;
-    }
+
     #plumb{
         padding: 0 40px;
     }
@@ -583,12 +600,7 @@ footer p{
     }
         
 }
-@media screen and (max-width:768px) {
-    #vic{
-        flex-direction: column;
-        justify-content: center;
-    }
-}
+
 @media screen and (max-width:419px) {
     .white{
         margin: 0 0 10px 0;
