@@ -12,11 +12,42 @@ body{
     -moz-box-sizing: border-box;
 }
 
-
+main{
+    overflow: hidden;
+}
 h1, h2, h3, h4, h5, h6 {
     font-family: Roboto,sans-serif;
 }
+#navi{
+    background-color:#e71a23 ;
+}
+#navi nav ul{
+    display: flex;
+    justify-content: space-between;
+} 
+nav ul{
+    max-width: 500px;
 
+}
+nav{
+    display: flex;
+    justify-content: center;
+}
+div nav ul li{
+    list-style-type: none;
+    padding: 15px;
+    font-size: 1.3em;
+}
+
+
+div nav ul a{
+    text-decoration: none;
+color: #ffffff;
+}
+div nav ul li:hover{
+    background-color: #f83741;
+    cursor: pointer;
+}
 #topp{
     background-image: url('./images/hero-bg.jpg');
     height: auto;
@@ -186,7 +217,6 @@ max-width: 400px;
 .container{
     display: flex;
     justify-content: center;
-   
 }
 
 #cone{
@@ -249,6 +279,62 @@ font-size: 1.7em;
 
 
 
+
+        #shap{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    max-width:960px;
+}
+.cont{
+    background-color: rgb(228, 225, 225);
+    display: flex;
+    justify-content: center;
+}
+#best1 img{
+    width: 100%;
+    height: 500px;
+    
+}
+#best1, #best2{
+  flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#qub .but{
+    float: left;
+    
+}
+
+#best2 h2{
+    font-size: 3.75rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: #104e92 !important;
+    padding: 0 0 15px 0;
+    border-bottom: #e71a23 10px solid;
+    margin-bottom: 35px;
+}
+#best2 p{
+    font-size: 1.125rem;
+    color: #111111;
+    font-family: 'Open Sans',sans-serif;
+    line-height: 1.4;
+}
+.but{
+    color: #ffffff !important;
+    background-color: #e71a23 !important;
+    letter-spacing: 1px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-style: solid;
+    margin: 30px auto 60px;
+    padding: 16px 36px;
+    border-radius: 3px !important;
+    cursor: pointer;
+}
 @media only screen and (max-width:768px) {
     #best{
         flex-direction: column;
@@ -278,63 +364,10 @@ font-size: 1.7em;
            
        }
        #best2 h2{
-           font-size: 2em;
+           font-size: 2.9em;
            
        }
    }
-        #shap{
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    max-width:960px;
-}
-.cont{
-    background-color: rgb(228, 225, 225);
-    display: flex;
-    justify-content: center;
-}
-#best1 img{
-    width: 100%;
-    height: 500px;
-    
-}
-#best1, #best2{
-  flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#qub .but{
-    float: left;
-}
-#best2 h2{
-    font-size: 3.75rem;
-    font-weight: 700;
-    line-height: 1.1;
-    color: #104e92 !important;
-    padding: 0 0 15px 0;
-    border-bottom: #e71a23 10px solid;
-    margin-bottom: 35px;
-}
-#best2 p{
-    font-size: 1.125rem;
-    color: #111111;
-    font-family: 'Open Sans',sans-serif;
-    line-height: 1.4;
-}
-.but{
-    color: #ffffff !important;
-    background-color: #e71a23 !important;
-    letter-spacing: 1px;
-    font-size: 0.75rem;
-    font-weight: 600;
-    border-style: solid;
-    margin: 30px auto 60px;
-    padding: 16px 36px;
-    border-radius: 3px !important;
-    cursor: pointer;
-}
 
 
 
@@ -343,15 +376,18 @@ font-size: 1.7em;
 
 
 
-#serve{
-    max-width: 1000px;
-    
-}
-#serve h2{
+   #serve h2{
     font-size: 3.125rem;
     line-height: 1.1;
     font-weight: 700;
     margin: 40px 0 40px 0;
+}
+#serve{
+    max-width: 1000px;
+}
+.container{
+    display: flex;
+    justify-content: center;
 }
 #vic{
     display: flex;
@@ -384,7 +420,31 @@ font-size: 1.7em;
     font-style: italic;
     color: #111111;
     line-height: 1.6;
+} 
+@media only screen and (max-width:1100px){
+    #serve{
+        max-width: 700px;
+    }
 }
+@media only screen and (max-width:655px) {
+    #serve{
+        text-align: center;
+    }
+    #vic{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        text-align: center;
+        max-width: 400px;
+    }
+}
+
+
+
+
+
+
+
 #plumb{
     display: flex;
 align-items: center;
