@@ -20,6 +20,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 #navi{
     background-color:#e71a23 ;
+    position: fixed;
+    width: 100%;
 }
 #navi nav ul{
     display: flex;
@@ -49,6 +51,7 @@ div nav ul li:hover{
     cursor: pointer;
 }
 #topp{
+    margin-top: 3em;
     background-image: url('./images/hero-bg.jpg');
     height: auto;
     background-position: 50% 0%;
@@ -82,8 +85,12 @@ div nav ul li:hover{
     border-bottom: white solid 10px;
     
 }
+#icon div svg{
+    width: 100px;
+fill: white;
+}
 #icon{
-    padding: 15px 0 0 0;
+    padding: 15px 0 40px 0;
     font-size: 5em;
     color: white;
     display: flex;
@@ -110,7 +117,7 @@ max-width: 530px;
                 font-size: 6em;
             }
         }
-        @media only screen and (max-width:768px) {
+        @media only screen and (max-width:766px) {
             #icon div{
                 display: none;
             }
@@ -154,12 +161,14 @@ max-width: 400px;
         }
         @media only screen and (max-width:424px){
             #top h5{
-                font-size: 1em;
+                font-size: 2em;
             }
             #top h1{
-                font-size:2.2em;
+                font-size:4em;
             }
-
+            #topp{
+                padding:0 25px 0 25px ;
+            }
         }
 .txt{
     font-size: 0.2em;
