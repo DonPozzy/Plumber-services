@@ -158,6 +158,14 @@ max-width: 400px;
             #top h1{
                 font-size: 3em;
             }
+            div nav ul li{
+                font-size: 0.97em;
+                padding: 15px;
+            }
+            div nav{
+                padding-left:3px;
+                
+            }
         }
         @media only screen and (max-width:424px){
             #top h5{
@@ -555,20 +563,30 @@ footer{
     justify-content: center;
     color: #ffffff;
     background-color: #333333;
-    padding: 10px 0 40px 0;
+    padding: 0 0 40px 0;
 }
-footer p{
-    padding: 30px 0 80px 0;
-    font-size: 0.875rem;
+footer h2{
+    padding: 30px 0 40px;
+    font-size: 2em;
     line-height: 1.6;
     font-family: 'Open Sans',sans-serif;
 }
-#flink{
+.flink{
     text-align: center;
     max-width: 375px;
 }
-#link a{
+.link{
+    padding-left: 10px;
+}
+#footflex a{
     color: #abcff7;
+}
+#footflex i{
+    color: white;
+    font-size: 1.3em;
+}
+#footflex{
+    display: flex;
 }
 
 
